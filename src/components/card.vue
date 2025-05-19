@@ -1,14 +1,19 @@
 <template>
-  <div class="card">
-    <img :src="props.card.image" alt="card" />
-    <div>
-      <div>
-        <p>{{ props.card.location }}</p>
-        <p>{{ props.card.sub_location }}</p>
+  <div class="bg-white rounded-[2rem] p-1 w-[400px] h-[300px]">
+    <img
+      :src="props.card.image"
+      alt="card"
+      class="w-full h-[200px] rounded-t-[2rem] rounded-b-[1rem]"
+    />
+    <div class="flex justify-between items-center h-[100px] px-2.5">
+      <div class="text-black text-left">
+        <p class="text-xl font-bold">{{ props.card.location }},</p>
+        <p class="text-sm text-gray-500">{{ props.card.sub_location }}</p>
       </div>
       <div>
-        <button>
-          <img src="@/assets/images/icons/play.svg" alt="play" />
+        <button class="bg-gray-100 rounded-full p-2">
+          <!-- <img src="@/assets/images/icons/play.svg" alt="play" /> -->
+          Directions
         </button>
       </div>
     </div>
