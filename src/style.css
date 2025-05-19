@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #141414;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -65,6 +65,17 @@ button:focus-visible {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+/* Example overlay */
+#app::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('./assets/images/alte_background.png');
+  opacity: 0.6;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
 }
 
 @media (prefers-color-scheme: light) {
