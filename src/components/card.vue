@@ -1,5 +1,5 @@
 <template>
-  <div :class="props.card.mode === 'Dark' ? 'bg-black' : 'bg-white'" class="rounded-[2rem] p-1 w-[400px] h-[300px]">
+  <div :class="props.card.mode === 'Dark' ? 'bg-black' : 'bg-white'" class="rounded-[2rem] p-1 w-[300px] h-[300px] md:w-[400px] md:h-[300px]">
     <img
       :src="props.card.image"
       alt="card"
@@ -7,7 +7,7 @@
     />
     <div class="flex justify-between items-center h-[100px] px-2.5">
       <div class="text-black text-left">
-        <p :class="props.card.mode === 'Dark' && 'text-white' " class="text-xl font-bold">{{ props.card.location }},</p>
+        <p :class="props.card.mode === 'Dark' && 'text-white' " class=" text-lg md:text-xl font-bold">{{ props.card.location }},</p>
         <p class="text-sm text-gray-500">{{ props.card.sub_location }}</p>
       </div>
       <div>
