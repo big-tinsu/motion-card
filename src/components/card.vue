@@ -11,8 +11,12 @@
         <p class="text-sm text-gray-500">{{ props.card.sub_location }}</p>
       </div>
       <div>
-        <button class="bg-gray-100 rounded-full p-2">
-          <!-- <img src="@/assets/images/icons/play.svg" alt="play" /> -->
+        <button class="bg-gray-100 rounded-full p-2 flex items-center gap-2">
+          <img
+            src="../assets/logos/locate.png"
+            alt="directions"
+            class="w-6 h-6"
+          />
           Directions
         </button>
       </div>

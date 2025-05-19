@@ -18,9 +18,9 @@ const card = {
 
 const card2 = {
   id: 2,
-  location: 'Eiffel Tower',
-  sub_location: 'Paris, France',
-  image: '/src/assets/images/eiffel-tower.png',
+  location: 'Chichen Itza',
+  sub_location: 'Mexico',
+  image: '/src/assets/images/chichen_itza.png',
   mode: 'Dark',
 }
 </script>
@@ -31,8 +31,12 @@ const card2 = {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 </style>
