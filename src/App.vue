@@ -12,7 +12,7 @@ const card = {
   id: 1,
   location: 'Colosseum',
   sub_location: 'Rome, Italy',
-  image: '/src/assets/images/colosseum.png',
+  image: './assets/images/colosseum.png',
   mode: 'Light',
 }
 
@@ -20,7 +20,7 @@ const card2 = {
   id: 2,
   location: 'Chichen Itza',
   sub_location: 'Mexico',
-  image: '/src/assets/images/chichen_itza.png',
+  image: './assets/images/chichen_itza.png',
   mode: 'Dark',
 }
 </script>
